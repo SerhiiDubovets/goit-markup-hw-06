@@ -64,11 +64,11 @@
             </button>
 
             <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-            <form action="">
+            <form class="form" action="">
               <div class="form-block">
                 <label for="name" class="form-label">Имя</label>
                 <div class="form-box">
-                  <input type="text" name="name" class="form-input" id="name"> 
+                  <input type="text" name="name" class="form-input" id="name" required> 
                   <svg width="18px" height="18px" class="form-svg">
                     <use xlink:href="./images/symbol-defs.svg#icon-person-black"></use>
                   </svg>
@@ -86,7 +86,7 @@
               <div class="form-block">
                 <label for="mail" class="form-label">Почта</label>
                 <div class="form-box">
-                  <input type="email" name="mail" class="form-input" id="mail"> 
+                  <input type="email" name="mail" class="form-input" id="mail" required> 
                   <svg width="18px" height="18px" class="form-svg">
                     <use xlink:href="./images/symbol-defs.svg#icon-email-black"></use>
                   </svg>
@@ -101,7 +101,7 @@
                 <label class="form-condition" >
                   <input class="checkbox" type="checkbox" name="condition" value="">
                   <span class="condition-icon">
-                  </span>Соглашаюсь с рассылкой и принимаю 
+                  </span>Соглашаюсь с рассылкой и принимаю &nbsp 
                   <a href="" class="condition-link">Условия договора</a>
                 </label>
               </div>
@@ -354,7 +354,7 @@
         <h3 class="subscription-titles">Подпишитесь на рассылку</h3>
         <form action="">
           <label class="subscription-label" for="mail"></label>
-        <input class="subscription-input" type="text" name="mail" placeholder="E-mail">
+        <input class="subscription-input" type="email" name="mail" id="mail" placeholder="E-mail" required>
           <button type="submit" class="subscription-button">Подписаться
             <svg class="subscription-send" width="24px" height="24px">
           <use xlink:href="./images/symbol-defs.svg#icon-icon-send"></use>
