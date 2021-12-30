@@ -737,7 +737,10 @@ img {
 .footer-cont {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
+}
+
+.address-block {
+  margin-right: 70px;
 }
 
 .footer-logo {
@@ -781,6 +784,10 @@ img {
 
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+}
+
+.connect-block {
+  margin-right: 93px;
 }
 
 .connect-titles {
@@ -842,6 +849,8 @@ img {
 }
 
 .subscription-input {
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   padding: 15px 16px;
   margin-right: 12px;
   width: 358px;
